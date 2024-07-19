@@ -6,7 +6,7 @@ use warnings;
 use OpenMP::Simple;
 use OpenMP::Environment;
 
-my $VERSION = q{1.0};
+my $VERSION = q{1.0.0};
 
 sub new {
   my ($pkg) = shift;
