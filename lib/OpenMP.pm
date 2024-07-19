@@ -6,7 +6,7 @@ use warnings;
 use OpenMP::Simple;
 use OpenMP::Environment;
 
-my $VERSION = q{1.0.0};
+my $VERSION = q{1.0.1};
 
 sub new {
   my ($pkg) = shift;
@@ -85,11 +85,15 @@ There are just 2 methods,
 
 =over 4
 
-=item B<new> - constructor, only needed if you're going to use the next method,
-which means you're updating OpenMP variables in the environment.
+=item B<new>
 
-=item B<env> - chainable accessor to the L<OpenMP::Environment> reference that
-is created when the constructor B<new> used.
+constructor, only needed if you're going to use the next method, which means
+you're updating OpenMP variables in the environment.
+
+=item B<env>
+
+chainable accessor to the L<OpenMP::Environment> reference that is created when
+the constructor B<new> used.
 
 =back
 
